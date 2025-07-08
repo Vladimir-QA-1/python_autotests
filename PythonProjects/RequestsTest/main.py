@@ -1,7 +1,7 @@
 import requests
 
 URL = 'https://api.pokemonbattle.ru/v2'
-TOKEN = 'cfb0ff184151ae098bd193e20522f8d7'
+TOKEN = 'тут токен тренера'
 HEADER = {'Content-Type':'application/json', 'trainer_token':TOKEN}
 
 body_create = {
@@ -10,13 +10,13 @@ body_create = {
 }
 
 body_rename = {
-    "pokemon_id": "349518",
+    "pokemon_id": "id покемона",
     "name": "paper",
     "photo_id": 1000
 }
 
 body_add_pokeboll = {
-    "pokemon_id": "353021"
+    "pokemon_id": "id покемона"
 }
 
 r'''esponse_create = requests.post(url = f'{URL}/pokemons', headers = HEADER, json = body_create)
